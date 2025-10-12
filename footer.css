@@ -1,0 +1,102 @@
+/* ======= FOOTER STYLING ======= */
+.footer {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 60px 10%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  /* LOGO SECTION */
+  .footer-logo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .footer-logo h2 span {
+    color: #007bff;
+  }
+
+  .footer-logo p {
+    font-size: 0.95rem;
+    color: #ddd;
+    max-width: 250px;
+  }
+
+  /* CONTACT INFO */
+  .footer-info h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+
+  .footer-info ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-info li {
+    color: #eee;
+    font-size: 0.95rem;
+    margin: 8px 0;
+  }
+
+  /* SOCIAL ICONS */
+  .footer-social h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background: #007bff;
+    transform: scale(1.2);
+  }
+
+  /* FOOTER BOTTOM */
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-logo, .footer-info, .footer-social {
+      flex: 1;
+    }
+
+    .social-icons {
+      justify-content: center;
+    }
+  }

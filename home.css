@@ -1,0 +1,174 @@
+/* ===== Home Page Styling ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+  }
+  
+  /* Main Layout */
+  .home-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 80vh;
+  }
+  
+  /* Left Section */
+  .left-section {
+    width: 33%;
+    /* background: #f9f9f9; */
+    background: #e7f0ff;
+
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head h2{
+    width: auto;
+    z-index: 1;
+  }
+  
+  
+  .left-section h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  
+  .left-section span {
+    /* color: rgb(25, 12, 218); */
+    font-weight: 700;
+  }
+  
+  .left-section .sub-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+  .left-large{
+    height: 100%;
+    padding: 0;
+  }
+  .vision-box {
+    background: #e7f0ff;
+    padding: 25px;
+    border-radius: 10px;
+    height: 100%;
+    animation: fadeSlideIn 1.2s ease forwards;
+  transform: translateY(20px);
+  opacity: 0;
+  }
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .vision-box h3 {
+    color: #003e99;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .vision-box p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.9;
+    font-style: italic;
+  }
+  
+  /* Middle Section (Doctor Image) */
+  .middle-section {
+    width: 34%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    align-items: center;
+    background: #fff;
+  }
+  
+  .middle-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 10px; */
+  }
+  
+  /* Right Section */
+  .right-section {
+    width: 33%;
+    background: #ffeef1;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeSlideInUp 1.2s ease forwards;
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  @keyframes fadeSlideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .right-section h3 {
+    font-size: 1.5rem;
+    /* color: #333; */
+    margin-bottom: 20px;
+    color: #003e99;
+    font-style:italic ;
+  }
+  
+  .right-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .right-section li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.;
+    position: relative;
+    padding-left: 18px;
+    font-style: italic;
+  }
+  
+  .right-section li::before {
+    content: "";
+    color: #444;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .home-page {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .left-section, .middle-section, .right-section {
+      width: 100%;
+      padding: 40px 20px;
+    }
+  
+    .middle-section img {
+      width: 70%;
+    }
+  }
+  

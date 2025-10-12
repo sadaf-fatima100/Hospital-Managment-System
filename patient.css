@@ -1,0 +1,94 @@
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f6f9fc;
+  }
+  
+  #patients h2 {
+    color: #2b3a67;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* 🔹 Scrolling Container */
+  .scroll-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* 🔹 Content inside which scrolls continuously */
+  .scroll-content {
+    display: flex;
+    gap: 25px;
+    width: max-content;
+    animation: scrollLeft 40s linear infinite;
+  }
+  
+  /* 🔹 Card Styling */
+  .patient-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 280px;
+    flex: 0 0 auto;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .patient-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  
+  .patient-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .patient-card h3 {
+    margin-top: 15px;
+    color: #2b3a67;
+  }
+  
+  .disease {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .quote {
+    font-style: italic;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  /* 🔹 Animation for continuous scrolling */
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* 🔹 Responsive */
+  @media (max-width: 768px) {
+    .patient-card {
+      width: 220px;
+      padding: 15px;
+    }
+    .scroll-content {
+      animation-duration: 25s; /* faster scroll on mobile */
+    }
+  }
+  

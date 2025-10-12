@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" /> <!-- Add this line -->
+  <link rel="stylesheet" href="statbar.css" /> <!-- Add this line -->
+  <link rel="stylesheet" href="Appointment.css" /> <!-- Add this line -->
+  <link rel="stylesheet" href="services.css" /> <!-- Add this line -->
+  <link rel="stylesheet" href="booking.css" /> <!-- Add this line -->
+  <link rel="stylesheet" href="patient.css" /> <!-- Add this line -->
+  <link rel="stylesheet" href="footer.css" /> <!-- Add this line -->
+  <link rel="stylesheet" href="test.css" /> <!-- Add this line -->
+  <link rel="stylesheet" href="footer.css" /> <!-- Add this line -->
+ 
+
+</head>
+
+<body>
+  <!-- ======= Navbar ======= -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>Health<span>Care+</span></h2>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <div class="close-icon" id="menuClose">
+          <i class="fas fa-times"></i> <!-- close icon -->
+        </div> 
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#booking">Appointments</a></li>
+        <li><a href="#patients">Patients</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+     
+
+     
+        <!-- Hamburger Menu -->
+      <!-- Hamburger and Close Icons -->
+      
+      <div class="hamburger" id="menuToggle"  style="display: flex !important">
+        <i class="fa-solid fa-bars"></i> <!-- open icon -->
+      </div>
+    </nav>
+    
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h5>Smart & Reliable Care</h5>
+      <h1>Manage <span>Patients</span> & <span>Doctors</span> Easily</h1>
+      <p>
+        Our Hospital Management System simplifies healthcare operations — from doctor scheduling and patient records to appointments and services — all in one secure platform.
+      </p>
+      <div class="hero-buttons">
+        <a href="#appointments" class="btn primary">Book Appointment</a>
+        <a href="#contact" class="btn secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+    <!-- ======= Stats Bar Section ======= -->
+    <section class="stats-bar">
+      <div class="stat">
+        <h2>20+</h2>
+        <p>Years Of Experience</p>
+      </div>
+      <div class="divider"></div>
+      <div class="stat">
+        <h2>150+</h2>
+        <p>Expert Doctors</p>
+      </div>
+      <div class="divider"></div>
+      <div class="stat">
+        <h2>8,792+</h2>
+        <p>Happy Patients</p>
+      </div>
+      <div class="divider"></div>
+      <div class="stat">
+        <h2>460+</h2>
+        <p>Health Departments</p>
+      </div>
+    </section>
+  
+
+  <!-- ======= Home (Mission & Vision) Section ======= -->
+  <section class="home-page" id="home-section">
+    <div class="left-section">
+      <!-- <div class="head"> -->
+      <h2><span>Hospital</span> Mission, Vision and core values</h2>
+      <!-- <p class="sub-text">
+        This section highlights our hospital’s long-term goals and guiding principles.
+      </p> -->
+    <!-- </div> -->
+       <!-- <div class="left-large"> -->
+      <div class="vision-box">
+        <h3>Vision</h3>
+        <p>
+          Our vision is to become a leading hospital in the country, providing healthcare services of international standards and positively impacting lives through exceptional clinical care and unwavering commitment.
+        </p>
+      <!-- </div> -->
+    </div>
+    </div>
+
+    <div class="middle-section">
+      <img src="./surgens-home.avif" alt="Doctor">
+    </div>
+
+    <div class="right-section">
+      <h3>Mission statement</h3>
+      <ul>
+        <li>To provide Hope, Care and Cure</li>
+        <li>To integrate research and technology in patient care</li>
+        <li>To become the top location for academic and medical research</li>
+      </ul>
+    </div>
+  </section>
+<!-- ======= Appointment Section ======= -->
+<section class="appointment-section" id="appointments">
+  <h2>Book an appointment for an in-clinic consultation</h2>
+  <div class="category-buttons">
+    <button class="category-btn active" onclick="showDoctors('All')">All</button>
+    <button class="category-btn" onclick="showDoctors('Obesity')">Obesity</button>
+    <button class="category-btn" onclick="showDoctors('Neck pain')">Neck pain</button>
+    <button class="category-btn" onclick="showDoctors('Neurology')">Neurology</button>
+    <button class="category-btn" onclick="showDoctors('Headache')">Headache</button>
+    <button class="category-btn" onclick="showDoctors('Shoulder')">Shoulder</button>
+    <button class="category-btn" onclick="showDoctors('Eye care')">Eye care</button>
+  </div>
+  <div class="doctors-list" id="doctorsList">
+    <!-- Doctors will be populated here via JavaScript -->
+  </div>
+</section>
+<!-- Section 1: Find Tests -->
+<section class="test-section">
+  <h2>Find Tests by <span>Health Concern</span></h2>
+  <div class="test-grid">
+    <div class="test-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/9044/9044240.png" alt="Liver">
+      <p>Liver</p>
+    </div>
+    <div class="test-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/967/967119.png" alt="Blood">
+      <p>Blood</p>
+    </div>
+    <div class="test-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4986/4986231.png" alt="Backpain">
+      <p>Backpain</p>
+    </div>
+    <div class="test-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5570/5570758.png" alt="Kidneys">
+      <p>Kidneys</p>
+    </div>
+    <div class="test-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5996/5996288.png" alt="Orthopaedics">
+      <p>Orthopaedics</p>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- Section 2: Discounted Packages -->
+<section class="package-section">
+  <h2>Special <span>Health Packages</span></h2>
+  <div class="package-grid">
+    <div class="package-card">
+      <span class="discount-badge">20% Off</span>
+      <img src="https://media.istockphoto.com/id/1500176826/vector/woman-doctor-and-approved-medical-recommend-document-order-vector-linear-icon-isolated-on.jpg?s=612x612&w=0&k=20&c=eEKw5t6qAnEIF3z8MP9J25ROsYzlbwtx4zgBCRfBkm0=" alt="Full Body Health">
+      <h3>Medicare Full Body Health Checkup</h3>
+      <p>Includes 12 Tests</p>
+      <div class="price">
+        <span class="current">$430.00</span>
+        <span class="old">$80.00</span>
+      </div>
+      <button class="add-btn">Add</button>
+    </div>
+
+    <div class="package-card">
+      <span class="discount-badge">20% Off</span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwDL2vI8RK9jN-Kc9fIbvCiU_ks9lK4jKxGg&s" alt="Vitamin Checkup">
+      <h3>Comprehensive Full Body Checkup with Vitamin D & B12</h3>
+      <p>Includes 11 Tests</p>
+      <div class="price">
+        <span class="current">$240.00</span>
+        <span class="old">$80.00</span>
+      </div>
+      <button class="add-btn">Add</button>
+    </div>
+
+    <div class="package-card">
+      <img src="https://static.thenounproject.com/png/952958-200.png" alt="Women Health">
+      <h3>Women's Staying Strong Health Checkup</h3>
+      <p>Includes 32 Tests</p>
+      <div class="price">
+        <span class="current">$300.00</span>
+        <span class="old">$220.00</span>
+      </div>
+      <button class="add-btn">Add</button>
+    </div>
+
+    <div class="package-card">
+      <span class="discount-badge">20% Off</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/2321/2321265.png" alt="Diabetes Screening">
+      <h3>Medicare Diabetes Screening</h3>
+      <p>Includes 07 Tests</p>
+      <div class="price">
+        <span class="current">$364.00</span>
+        <span class="old">$80.00</span>
+      </div>
+      <button class="add-btn">Add</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Services Section ======= -->
+<section class="services-section" id="services" >
+  <!-- Banner Section -->
+  <div class="banner-section">
+    <p class="health">Healthcare solutions</p>
+    <h1>Your health is our <span>Top priority</span>😊</h1>
+  </div>
+
+  <!-- Service Cards Section -->
+  <h2>Our Healthcare Service</h2>
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+  <div class="service-cards">
+    <div class="service-card">
+      <img src="https://img.icons8.com/pastel_glyph/512w/FFFFFF/siren.png" alt="Emergency">
+      <h3>Emergency Department</h3>
+      <p>If you use this site regularly and would like to...</p>
+    </div>
+    <div class="service-card">
+      <img src="./baby.png" alt="Pediatric">
+      <h3>Pediatric Department</h3>
+      <p>If you use this site regularly and would like to...</p>
+    </div>
+    <div class="service-card">
+      <img src="./stethoscope.png" alt="General Physician">
+      <h3>General Physician</h3>
+      <p>If you use this site regularly and would like to...</p>
+    </div>
+    <div class="service-card">
+      <img src="./brain.png" alt="Neurology">
+      <h3>Neurology Department</h3>
+      <p>If you use this site regularly and would like to...</p>
+    </div>
+    <div class="service-card">
+      <img src="./like-heart.png" alt="Cardiology">
+      <h3>Cardiology Department</h3>
+      <p>If you use this site regularly and would like to...</p>
+    </div>
+  </div>
+</section>
+<!-- Appointment Section -->
+<section class="booking-section" id="booking">
+  <div class="booking-overlay">
+    <div class="booking-container">
+      <h2>Book Your <span>Appointment</span></h2>
+      <p>We are here to provide you with expert medical consultation. Please fill out the form below.</p>
+
+      <form class="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="tel" placeholder="Mobile Number" required />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Choose Patient</option>
+              <option>Existing Patient</option>
+              <option>New Patient</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <select required>
+              <option value="">Select Department</option>
+              <option>Cardiology</option>
+              <option>Neurology</option>
+              <option>Pediatrics</option>
+              <option>Dermatology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Medical Insurance</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" placeholder="Reason for Visit" required />
+        </div>
+
+        <div class="form-group">
+          <input type="date" required />
+        </div>
+
+        <button type="submit" class="book-btn">Book Now</button>
+      </form>
+    </div>
+  </div>
+</section>
+ <!-- Patients Section -->
+ <section id="patients" class="section">
+  <h2>Recovered Patients</h2>
+  <p class="subtitle">Our patients who regained health with care and dedication.</p>
+
+  <!-- Scrolling Wrapper -->
+  <div class="scroll-container">
+    <div class="scroll-content">
+      <!-- same cards repeat 2 times for smooth loop -->
+      <div class="patient-card" >
+        <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvczc3LW1ja2luc2V5LTE0MjMtcG9tXzQuanBn.jpg" alt="Patient 1">
+        <h3>Ali Raza</h3>
+        <p class="disease">Recovered from Heart Surgery</p>
+        <p class="quote">"Thanks to Medico, I feel new life again."</p>
+      </div>
+
+      <div class="patient-card">
+        <img src="https://www.massgeneralbrigham.org/content/mgb-global/global/en/medical-professionals/patient-transfer-access-center/_jcr_content/root/container_924996778/hero_banner.coreimg.jpeg/1695751826558/ptac-hero-1428x1110.jpeg" alt="Patient 2">
+        <h3>Fatima Khan</h3>
+        <p class="disease">Recovered from Pneumonia</p>
+        <p class="quote">"The doctors were like family, always caring."</p>
+      </div>
+
+      <div class="patient-card">
+        <img src="https://www.oakvalleyhealth.ca/wp-content/uploads/2025/07/Patient-and-visitors-1280x720.jpg" alt="Patient 3">
+        <h3>Ahmed Ali</h3>
+        <p class="disease">Recovered from Kidney Treatment</p>
+        <p class="quote">"I’m grateful for their dedication and care."</p>
+      </div>
+
+      <!-- same cards repeat again for infinite loop -->
+      <div class="patient-card">
+        <img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvczc3LW1ja2luc2V5LTE0MjMtcG9tXzQuanBn.jpg" alt="Patient 4">
+        <h3>Ali Raza</h3>
+        <p class="disease">Recovered from Heart Surgery</p>
+        <p class="quote">"Thanks to Medico, I feel new life again."</p>
+      </div>
+
+      <div class="patient-card">
+        <img src="https://www.massgeneralbrigham.org/content/mgb-global/global/en/medical-professionals/patient-transfer-access-center/_jcr_content/root/container_924996778/hero_banner.coreimg.jpeg/1695751826558/ptac-hero-1428x1110.jpeg" alt="Patient 5">
+        <h3>Fatima Khan</h3>
+        <p class="disease">Recovered from Pneumonia</p>
+        <p class="quote">"The doctors were like family, always caring."</p>
+      </div>
+
+      <div class="patient-card">
+        <img src="https://www.oakvalleyhealth.ca/wp-content/uploads/2025/07/Patient-and-visitors-1280x720.jpg" alt="Patient 6">
+        <h3>Ahmed Ali</h3>
+        <p class="disease">Recovered from Kidney Treatment</p>
+        <p class="quote">"I’m grateful for their dedication and care."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT / FOOTER SECTION -->
+<!-- FOOTER SECTION -->
+<footer class="footer" id="footerSection">
+  <div class="footer-container">
+    <!-- Logo + About -->
+    <div class="footer-logo">
+      <h2>Health<span>Care+</span></h2>
+      <p>Your trusted partner for a healthier tomorrow.</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-info">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><strong>📍 Address:</strong> 123 Wellness Street, Lahore, Pakistan</li>
+        <li><strong>📞 Phone:</strong> +92 300 1234567</li>
+        <li><strong>📧 Email:</strong> support@healthcareplus.com</li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 <b>HealthCare+</b>. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+</body>
+
+<!-- ======= Scripts ======= -->
+<script src="doctors.js"></script>
+<script src="./Script.js"></script>
+<!-- FontAwesome Icons -->
+
+
+</body>
+</html>

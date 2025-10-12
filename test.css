@@ -1,0 +1,164 @@
+
+  
+  /* ---------- Section 1 ---------- */
+  .test-section {
+    text-align: center;
+    padding: 60px 20px;
+    /* background: #fff; */
+    background-color: #09213a;
+  }
+  
+  .test-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    /* color: #111; */
+    color: wheat;
+  }
+  
+  .test-section h2 span {
+    color: #007bff;
+  }
+  
+  .test-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .test-card {
+    background: #f2f6ff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .test-card img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+  
+  .test-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* ---------- Section 2 ---------- */
+  .package-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .package-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .package-section h2 span {
+    color: #007bff;
+  }
+  
+  .package-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .package-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .package-card img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+  
+  .discount-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ffcc00;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .package-card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .package-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .price .current {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #111;
+  }
+  
+  .price .old {
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .add-btn {
+    background-color: #b3e5fc;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #81d4fa;
+  }
+  
+  /* ---------- Responsive ---------- */
+  @media (max-width: 768px) {
+    .test-card {
+      width: 100px;
+      height: 100px;
+    }
+    .package-card {
+      width: 90%;
+    }
+  }
+  
