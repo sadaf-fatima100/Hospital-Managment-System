@@ -1,6 +1,7 @@
 .booking-section {
     position: relative;
-    background: url('https://t4.ftcdn.net/jpg/14/10/76/51/360_F_1410765192_EHs1THqR1qMhYmW6Ihsua66Rbn71eGEf.jpg') no-repeat center center/cover;
+    /* background: url('https://t4.ftcdn.net/jpg/14/10/76/51/360_F_1410765192_EHs1THqR1qMhYmW6Ihsua66Rbn71eGEf.jpg') no-repeat center center/cover; */
+    background: url('https://img.freepik.com/premium-photo/hospital-corridor-with-plant-floor_1158271-2254.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center/cover;
     padding: 40px 0;
     color: #fff;
     font-family: 'Poppins', sans-serif;
@@ -30,7 +31,8 @@
   }
   
   .booking-container h2 span {
-    color: #0ac5a8;
+    /* color: #0ac5a8; */
+    color: blue;
   }
   
   .booking-container p {
@@ -62,7 +64,7 @@
   
   .book-btn {
     margin-top: 15px;
-    background-color: #0ac5a8;
+    background-color: blue;
     color: #fff;
     padding: 14px 0;
     font-size: 16px;
@@ -73,7 +75,7 @@
   }
   
   .book-btn:hover {
-    background-color: #08a992;
+    background-color: rgb(97, 97, 218);
   }
   /* Two-column responsive layout for larger screens */
 .form-row {

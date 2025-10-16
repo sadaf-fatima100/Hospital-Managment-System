@@ -1,0 +1,43 @@
+/* ===== Moving Info Strip ===== */
+.info-strip {
+    background-color: #fdd835; /* soft yellow */
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    font-family: "Poppins", sans-serif;
+    border-bottom: 2px solid #fbc02d;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveText 20s linear infinite;
+  }
+  
+  .marquee p {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Animation for moving effect */
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .marquee p {
+      font-size: 13px;
+    }
+  }
+  

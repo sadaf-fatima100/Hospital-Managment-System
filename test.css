@@ -154,8 +154,8 @@
   /* ---------- Responsive ---------- */
   @media (max-width: 768px) {
     .test-card {
-      width: 100px;
-      height: 100px;
+      width: 113px;
+      height: 113px;
     }
     .package-card {
       width: 90%;

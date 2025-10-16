@@ -113,7 +113,7 @@
    /* background: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2FpZ2VuZXJhdGVkLTI0MDcyMy1yYXdwaXhlbF9vZmZpY2VfMTVfYV9waG90b19vZl9vcGVyYXRpbmdfcm9vbV93aXRoX2RvY3Rvcl91c2VfZW5fYjczZmRkYTYtYzk3Ny00YjRmLTllOGQtNzdmZWE0NGE3MDJmLWhxLXNjYWxlLTVfMDB4LmpwZw.jpg"),  #4495ec; */
    background: 
   linear-gradient(70deg, #b5d9ff 50%,transparent 50%),
-  url("./hero-backgroun.webp")
+  url("./img/hero-backgroun.webp")
   no-repeat ;
 
   background-repeat: no-repeat;
@@ -241,6 +241,49 @@
   html {
     scroll-behavior: smooth;
   }
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+  }
+  
+  .auth-buttons .btn {
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  /* Sign In Button */
+  .auth-buttons .signin {
+    background-color: transparent;
+    border: 2px solid #4a90e2;
+    color: #4a90e2;
+  }
+  
+  .auth-buttons .signin:hover {
+    background-color: #4a90e2;
+    color: white;
+    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.4);
+  }
+  
+  /* Sign Up Button */
+  .auth-buttons .signup {
+    background-color: #4a90e2;
+    border: 2px solid #4a90e2;
+    color: white;
+  }
+  
+  .auth-buttons .signup:hover {
+    background-color: white;
+    color: #4a90e2;
+    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.4);
+  }
+  
   
 
 
@@ -331,20 +374,23 @@ color: #333;
       align-items: flex-start;
     } */
     .hero {
-      background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2FpZ2VuZXJhdGVkLTI0MDcyMy1yYXdwaXhlbF9vZmZpY2VfMTVfYV9waG90b19vZl9vcGVyYXRpbmdfcm9vbV93aXRoX2RvY3Rvcl91c2VfZW5fYjczZmRkYTYtYzk3Ny00YjRmLTllOGQtNzdmZWE0NGE3MDJmLWhxLXNjYWxlLTVfMDB4LmpwZw.jpg");
+      /* background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2FpZ2VuZXJhdGVkLTI0MDcyMy1yYXdwaXhlbF9vZmZpY2VfMTVfYV9waG90b19vZl9vcGVyYXRpbmdfcm9vbV93aXRoX2RvY3Rvcl91c2VfZW5fYjczZmRkYTYtYzk3Ny00YjRmLTllOGQtNzdmZWE0NGE3MDJmLWhxLXNjYWxlLTVfMDB4LmpwZw.jpg"); */
+      background-image: url("./img/hero-backgroun.webp");
       background-size: cover;      
       background-position: center; 
       background-repeat: no-repeat; 
       width: 100%;
-      height: 100vh;               
+      /* height: 100vh; */
+      padding: 0;               
     }
   
     .hero-content {
+      width: 100% !important;
       padding-right: 0;
       background: rgba(255, 255, 255, 0.15);
     padding: 40px 50px;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
+    /* border-radius: 10px; */
+    /* backdrop-filter: blur(5px); */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       
     }
