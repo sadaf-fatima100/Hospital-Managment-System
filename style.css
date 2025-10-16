@@ -323,21 +323,21 @@
           
       }
        /* ===== Auth Buttons ===== */
-.auth-buttons {
+/* .auth-buttons {
   display: flex;
   gap: 10px;
-}
+} */
 
-.auth-buttons .btn {
+/* .auth-buttons .btn {
   padding: 8px 18px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
   border: 2px solid #007bff;
-}
+} */
 
-.auth-buttons .signin {
+/* .auth-buttons .signin {
   color: #007bff;
   background: transparent;
 }
@@ -354,10 +354,10 @@
 
 .auth-buttons .signup:hover {
   background: #0056b3;
-}
+} */
 
 /* Hide auth buttons on small screens */
-.mobile-auth {
+.auth-buttons {
   display: none;
 }
 /* ===== Responsive Navbar Toggle ===== */
